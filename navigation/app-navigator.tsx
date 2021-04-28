@@ -2,17 +2,18 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from "@react-navigation/stack";
 import {Landing} from "../screens/landing";
 import React from "react";
+import {ClinicNavigator} from "./clinic-navigator";
 
 export const AppNavigator = (props: any) => {
     // const isAuth =
-
-    const MyStack = createStackNavigator();
+    // const RootStack = createStackNavigator();
 
     return (
         <NavigationContainer>
-            <MyStack.Navigator>
-                <MyStack.Screen name={'landing'} component={Landing}/>
-            </MyStack.Navigator>
+            {/*<RootStack.Navigator>*/}
+            {/*    <RootStack.Screen name={'landing'} component={Landing}/>*/}
+            {/*</RootStack.Navigator>*/}
+            <ClinicNavigator />
         </NavigationContainer>
     );
 }
